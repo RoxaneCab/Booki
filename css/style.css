@@ -53,7 +53,7 @@ body {
 }
 
 
-/****** Header ***********/
+/****** HEADER ***********/
 
 /****** Menu/Nav ***********/
 .header-menu {
@@ -65,10 +65,7 @@ body {
 .logo-booki img {
     width: 61.09px;
     height: auto;
-}
-
-.header-menu nav {
-    margin-top: 17px;
+    margin-top: 30px;
 }
 
 .header-menu a {
@@ -90,7 +87,6 @@ body {
 }
 
 /****** Search-bar ***********/
-
 .search-bar {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -99,7 +95,7 @@ body {
 .search-bar-form {
     display: flex;
     align-items: center;    
-  }
+}
 
 .fa-location-dot {
     color: #000;
@@ -123,8 +119,6 @@ body {
     color: black !important;
     opacity: 1;
 }
-
-/*place holder*/
 
 .search-button {
     color: white;
@@ -190,19 +184,24 @@ body {
     padding-right: 10px;
   }
 
-
 /****** Info-bulle ***********/
-
 .fa-info {
     border: 1px #D9D9D9 solid;
     border-radius: 50%;
     padding: 5px 10px 5px 10px;
     margin: 20px 5px 20px 0px;
 }
+
+.info-bulle {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 20px;
+}
   
 
 
-/****** Hebergements And Populaires ***********/
+/****** HEBERGEMENTS AND POPULAIRES ***********/
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
@@ -291,7 +290,10 @@ body {
 
 .populaires-cards .card {
     display: flex;
-    margin-top: 33px;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 20px; 
+    margin-bottom: 20px;
 }
 
 .populaires-cards img {
@@ -316,7 +318,7 @@ body {
     margin: 0;
 }
 
-/* LA MAGOUILLE */
+/* la magouille */
 
 .populaires-cards .card-rating {
     margin-top: 55px;
@@ -327,7 +329,7 @@ body {
 }
 
 
-/****** Activités ***********/
+/****** ACTIVITES ***********/
 
 .activites-grid-container {
     display: flex;
@@ -368,7 +370,7 @@ body {
 
 
 
-/****** Footer ***********/
+/****** FOOTER ***********/
 .footer {
     display: flex;
     flex-direction: row;
@@ -419,5 +421,247 @@ body {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+
+    body {
+        padding: 0 20px;
+    }
+
+ /*   .header-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .logo-booki img {
+        width: 61.09px;
+        height: auto;
+        margin-top: 30px;
+    }
+    
+    .header-menu a {
+        color: black;
+        text-decoration: none;
+        margin-left: 100px;
+        border-top: 2px transparent solid;
+    }
+    
+    .header-menu a:hover {
+        color: #0065FC;
+        padding-top: 15px;
+        border-top: 2px #0065FC solid;
+    }*/
+    
+
+    .header-menu {
+        display: flex;
+        flex-direction: column;
+        /*Ne fait rien
+        justify-content: none;
+        align-items: none;*/
+    }
+    
+    .logo-booki img {
+        width: 61.09px;
+        height: auto;
+        margin-top: 30px;
+    }
+    
+    .header-menu nav {
+        display: flex;
+        /*justify-content: space-around;*/
+    }
+
+    .header-menu a {
+        color: black;
+        padding-bottom: 15px;
+        border-bottom: 2px rgb(238, 238, 238) solid;
+        padding-top: 45px;
+        border-top: 0px transparent;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-left: 0;
+    }
+
+    .header-menu a:hover {
+        color: #0065FC;
+        padding-bottom: 15px;
+        border-bottom: 2px #0065FC solid;
+        padding-top: 45px;
+        border-top: 0px transparent;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-left: 0;
+    }
+    
+    /****** Description ***********/
+.headline {
+    margin-top: 50px;
 }
+
+/****** Search-bar ***********/
+.search-bar {
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.search-bar-form {
+    display: flex;
+    align-items: center;    
+}
+
+.fa-location-dot {
+    color: #000;
+    font-size: larger;
+    background-color: #F2F2F2;
+    padding: 16px 18px 16px 18px;
+    border-radius: 16px 0px 0px 16px;
+}
+
+.search-city {
+    font-size: large;
+    font-weight: 600;
+    border-top: 1px #F2F2F2 solid;
+    border-right: none;
+    border-bottom: 1px #F2F2F2 solid;
+    border-left: none;
+    padding: 14px 0px 14px 14px;
+}
+
+.search-city::placeholder {
+    color: black !important;
+    opacity: 1;
+}
+
+.search-button {
+    color: white;
+    font-size: large;
+    font-weight: 600;
+    background-color: #0065FC;
+    border: none;
+    border-radius: 0px 15px 15px 0px;
+    padding: 15px;
+}
+
+
+/****** Filtres ***********/
+.filter-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+}
+
+.filter-title {
+    padding-bottom: 10px;
+}
+
+.filter-tags {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*gap: 20px;*/
+}
+
+.filter-tags .tags {
+    border: 2px #D9D9D9 solid ;
+    border-radius: 25px;
+    padding-right: 20px;
+}
+
+.tags {
+    font-weight: 600;
+}
+
+.tags:hover {
+    border: 2px #D9D9D9 solid ;
+    border-radius: 25px;
+    padding-right: 20px;
+    background-color: #DEEBFF;
+}
+
+.fa-money-bill-wave {
+    padding-left: 19px;
+    padding-right: 10px;
+}
+  
+.fa-person {
+    padding-left: 19px;
+    padding-right: 10px;
+  }
+  
+.fa-heart {
+    padding-left: 19px;
+    padding-right: 10px;
+  }
+  
+.fa-fire {
+    padding-left: 19px;
+    padding-right: 10px;
+  }
+
+/****** Info-bulle ***********/
+
+.info-bulle {
+    display: flex;
+    justify-content: center;
+}
+
+.fa-info {
+    border: 1px #D9D9D9 solid;
+    border-radius: 50%;
+    padding: 5px 10px 5px 10px;
+    margin: 20px 5px 20px 0px;
+}
+
+*/
+    /* HEBERGEMENT */
+    .hebergements-and-populaires {
+        flex-direction: column-reverse;
+    }
+
+    .populaires {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .populaires-cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .populaires-cards .card {
+        width: 30%;
+    }
+
+    .populaires-cards .card-title {
+        font-size: 14px;
+    }
+
+    .populaires-cards .card-subtitle {
+        font-size: 13px;
+    }
+
+    .hebergements {
+        width: 100%;
+    }
+
+    .hebergements-cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .hebergements-cards .card {
+        width: 30%;
+    }
+
+    .hebergements-cards .card-title {
+        font-size: 14px;
+    }
+
+    .hebergements-cards .card-subtitle {
+        font-size: 13px;
+    }
+
+}
+
