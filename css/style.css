@@ -425,31 +425,6 @@ body {
     body {
         padding: 0 20px;
     }
-
- /*   .header-menu {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    .logo-booki img {
-        width: 61.09px;
-        height: auto;
-        margin-top: 30px;
-    }
-    
-    .header-menu a {
-        color: black;
-        text-decoration: none;
-        margin-left: 100px;
-        border-top: 2px transparent solid;
-    }
-    
-    .header-menu a:hover {
-        color: #0065FC;
-        padding-top: 15px;
-        border-top: 2px #0065FC solid;
-    }*/
     
 
     .header-menu {
