@@ -447,6 +447,10 @@ a {
         margin-top: 0px !important;
     }
 
+    .filter-tags {
+        gap: 10px !important;
+    }
+
     .info-bulle {
         padding-bottom: 15px;
     }
